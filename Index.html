@@ -1,22 +1,31 @@
-<!<DOCTYPE html>
-	<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<meta charset="utf-8">
-		<title>JSChess</title>
-		<script type="text/javascript"> if (!window.console) console={log:function(){}}; </script>
+		<title>JSChess</title>	
+		<link href="styles.css" rel="stylesheet" type="text/css">	
+		<script type="text/javascript"> if (!window.console) console = {log: function() {}}; </script>
 	</head>
-
 	<body>
 		<header>
-			<h3>JS Chess</h3>
-		</header>
-		<div id="FenInDiv">
-			Fen:<br/>
-			<input type="text" id="fenIn"/>
-			<button type="button" id="SetFen"> Set Position </button>
+			<h3>JS Chess</h3>			
+		</header>		
+		<div id="Board">
 		</div>
-
-		<script src="js/defs.js"></script>
+		<div id="EngineOutput">Thinking Time: <br/>
+			<span id="GameStatus"></span>
+		</div>
+		
+		<script src="js/jquery-1.10.1.min.js"></script>		
+		<script src="js/defs.js"></script>	
+		<script src="js/io.js"></script>	
+		<script src="js/board.js"></script>	
+		<script src="js/movegen.js"></script>	
+		<script src="js/makemove.js"></script>		
+		<script src="js/evaluate.js"></script>	
+		<script src="js/search.js"></script>
+		<script src="js/perft.js"></script>
+		<script src="js/gui.js"></script>
 		<script src="js/main.js"></script>
-	</html>
+	</body>
+</html>
